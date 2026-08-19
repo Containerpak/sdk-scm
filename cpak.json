@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
+  "manifest_version": "2.0",
+  "name": "Source Control SDK",
+  "description": "git, git-lfs and the GitHub CLI for cpak development environments.",
+  "version": "1.0.0",
+  "image": "ghcr.io/containerpak/sdk-scm:main",
+  "binaries": [
+    "/usr/bin/git",
+    "/usr/bin/git-lfs",
+    "/usr/bin/gh",
+    "/usr/bin/ssh",
+    "/usr/bin/ssh-add",
+    "/usr/bin/ssh-keygen"
+  ],
+  "desktop_entries": [],
+  "dependencies": [],
+  "addons": [],
+  "idle_time": 0,
+  "override": {
+    "filesystem": [
+      {
+        "path": "home",
+        "access": "read-write"
+      }
+    ],
+    "socketSshAgent": true,
+    "socketGpgAgent": true,
+    "network": true
+  }
+}
