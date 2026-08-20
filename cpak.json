@@ -16,6 +16,14 @@
   "desktop_entries": [],
   "dependencies": [],
   "addons": [],
+  "addon_provider": {
+    "id": "scm",
+    "slot": "sdk.scm",
+    "mode": "exclusive",
+    "exports": {
+      "path": ["/usr/bin"]
+    }
+  },
   "idle_time": 0,
   "override": {
     "socketX11": false,

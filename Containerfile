@@ -1,7 +1,4 @@
-FROM ubuntu:26.04
-
-COPY cpak-apt.conf /etc/apt/apt.conf.d/90cpak
-COPY --chmod=0755 cpak-clean-junk /usr/bin/cpak-clean-junk
+FROM ghcr.io/containerpak/base:main
 
 # git-lfs and the credential helpers come along because a checkout that asks
 # for a password and finds nothing to ask with is a checkout that hangs, and
