@@ -4,7 +4,7 @@
   "name": "Source Control SDK",
   "description": "git, git-lfs and the GitHub CLI for cpak development environments.",
   "version": "1.0.0",
-  "image": "ghcr.io/containerpak/sdk-scm@sha256:f9e9d8e2a51043c15b83be0ee4dd68831b23b1afc9990bb2c5552ea358ee44ad",
+  "image": "ghcr.io/containerpak/sdk-scm@sha256:a35b5def2ba6c38b55b5373a300c3994135d985b01a23ceb1061ec05aa83ffe6",
   "binaries": [
     "/usr/bin/git",
     "/usr/bin/git-lfs",
